@@ -30,6 +30,7 @@
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
+				<!--branch4-->
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
