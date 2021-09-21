@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="myprojectwithproxyFlow" doc:id="12908645-44d1-4649-840c-b155a6e957a7" >
+		<http:listener doc:name="Listener" doc:id="acbbcb0b-2fa7-44e2-86b3-f80fa570be63" config-ref="HTTP_Listener_config" path="/${http.path}"/>
+		<set-payload value="test payload with proxy" doc:name="Set Payload" doc:id="9af27f16-d37e-4711-b1ca-816bd4fbf318" />
+	</flow>
+</mule>
